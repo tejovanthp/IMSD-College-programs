@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function showDay() {
+      let day = parseInt(document.getElementById("dayNum").value);
+      let dayName;
+      switch (day) {
+        case 0: dayName = "Sunday"; 
+        break;
+        case 1: dayName = "Monday";
+         break;
+        case 2: dayName = "Tuesday";
+         break;
+        case 3: dayName = "Wednesday";
+         break;
+        case 4: dayName = "Thursday"; 
+        break;
+        case 5: dayName = "Friday"; 
+        break;
+        case 6: dayName = "Saturday";
+         break;
+        default: dayName = "Invalid Day";
+      }
+      document.getElementById("res").innerHTML = "<b>"+dayName+"</b>";
+    }
+  </script>
+</head>
+<body>
+  <h1>Weekdays using Switch</h1>
+  <label>Enter Day Number (0-6): </label>
+  <input type="number" id="dayNum">
+  <button onclick="showDay()">Day</button>
+  <p id="res"></p>
+</body>
+</html>

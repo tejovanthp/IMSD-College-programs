@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Semantic Tags Example</title>
+    <style>
+        header, nav, main, footer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+        }
+        aside {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        span.highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Simple Website</h1>
+        <p>Welcome to my website!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> | 
+        <a href="#">About</a> | 
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer who loves <span class="highlight">HTML5</span>.</p>
+        </section>
+
+        <article>
+            <h2>Latest Blog Post</h2>
+            <p>This is an article about the benefits of semantic HTML.</p>
+            <figure>
+                <img src="semantic.png" alt="Example image">
+                <figcaption>A sample placeholder image.</figcaption>
+            </figure>
+        </article>
+
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">HTML5 Tutorial</a></li>
+                <li><a href="#">CSS Basics</a></li>
+            </ul>
+        </aside>
+
+        <div>
+            <h3>Random Note</h3>
+            <p>This is a <span class="highlight">non-semantic</span> container using a div and span.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

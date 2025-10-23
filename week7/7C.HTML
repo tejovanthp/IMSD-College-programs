@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Object Demo</title>
+  <script>
+    function showArrayOperations() {
+      // Create an array
+      let vehicles = ["Car", "Bike", "Cycle"];
+      // Display original array
+      document.getElementById("original").innerText = "Original Array: " + vehicles;
+      // Property: length
+      document.getElementById("length").innerText = "Length: " + vehicles.length;
+      // Method: push() - add to end
+      vehicles.push("Scooty");
+      // Method: pop() - remove from end
+      let popped = vehicles.pop();
+      // Method: unshift() - add to start
+      vehicles.unshift("Auto");
+      // Method: shift() - remove from start
+      let shifted = vehicles.shift();
+      // Method: indexOf() - find index
+      let index = vehicles.indexOf("Bike");
+      // Method: join() - convert to string
+      let joined = vehicles.join(" | ");
+      //Sorting
+      vehicles.sort();
+      // Display results
+      document.getElementById("finalArray").innerText = "Final Array: " + vehicles;
+      document.getElementById("popped").innerText = "Popped Element: " + popped;
+      document.getElementById("shifted").innerText = "Shifted Element: " + shifted;
+      document.getElementById("index").innerText = "Index of Banana: " + index;
+      document.getElementById("joined").innerText = "Joined Array: " + joined;
+    }
+  </script>
+</head>
+<body>
+  <h2>Array Object Properties and Methods</h2>
+  <button onclick="showArrayOperations()">Run Array Operations</button>
+  <p id="original"></p>
+  <p id="length"></p>
+  <p id="popped"></p>
+  <p id="shifted"></p>
+  <p id="index"></p>
+  <p id="joined"></p>
+  <p id="finalArray" style="font-weight: bold; color: Purple;"></p>
+</body>
+</html>
